@@ -1,0 +1,34 @@
+React Mpls. 11-17-16
+
+Tim
+moosehawk.gitlab.io/blog
+gitlab.com/moosehawk
+
+Structure
+-Break things down into the smallest pieces possible.
+-By breaking things down it offers better performance and maintainability.
+
+Performance
+-When should I re-render the DOM
+--When the state of the DOM changes.
+--Virtual DOM matches what the user sees.
+--this.setState() mutates ====> mutate this.state ====> shouldComponentUpdate()
+---The above re-renders the DOM when changes on a certain node on the DOM
+
+State
+-Use state for stuff that will change within a component.
+-Managed within each component you create.
+-It is local
+-Should never be mutated directly. Instead use built in: setState();
+	--e.g. this.state.name = 'Dave'  is replaced with this.setState({name:'Dave'});
+
+Libraries & Tools
+-JavaScript: ES6/7
+-Build Tools: Webpack
+-State management: Redux, React-redux, Redux-immutable-state-invariant.
+-Transpiling ES6: Babel
+-Routing: React-router
+-Styling: React-bootstrap
+-Bootstrapping: create-react-app: good first tool to begin with.
+-Dependencies: npm
+-Testing: Mocha, Kharma, Enzyme
